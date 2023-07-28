@@ -47,7 +47,7 @@ function Signup() {
                         <BiSolidPhone className="logi" /><input type="text" pattern="[0-9]{10}" name="phone" placeholder="Phone" onChange={changehandler} value={inp.phone} required></input>
                     </div>
                     <div className="inpp-div">
-                        <RiLockPasswordFill className="logi" /><input type="password" name="password" placeholder="Password" onChange={changehandler} value={inp.password} required ></input>
+                        <RiLockPasswordFill className="logi" /><input type="password" name="password" placeholder="Password" onChange={changehandler} maxLength={10} minLength={5} value={inp.password} required ></input>
                     </div>
                     <div className="button-r">
                         <button className="tt" type="submit">Sign Up</button>

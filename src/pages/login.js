@@ -46,7 +46,7 @@ const Login = () => {
             <MdEmail className="logi" /> <input type="email" name="email" placeholder="Email" onChange={changehandler} value={inp.email} required></input>
           </div>
           <div className="inpp-div">
-            <RiLockPasswordFill className="logi" /> <input type="password" name="password" placeholder="Password" onChange={changehandler} value={inp.password} required ></input>
+            <RiLockPasswordFill className="logi" /> <input type="password" name="password" placeholder="Password" onChange={changehandler} maxLength={10} minLength={5} value={inp.password} required ></input>
           </div>
 
           <div className="button-r">
